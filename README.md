@@ -1,4 +1,3 @@
-
 上一集：[Rails 前世今生](http://ruby-china.org/topics/2799)
 
 ## 001 你的第一个 Rails 应用
@@ -396,8 +395,6 @@ http://localhost:3000/girls/N
 另外，有两个路由会根据不同的请求（request），做出不同的动作。如果你使用 `GET` 请求的话，第一个路由：`/girls` 会带你到 `GirlsController` 的 `index` 动作。`GET` 请求是标准浏览器的请求之一，这是你对这个应用做的第一个请求（到 http://localhost:3000/ 页面）如果你对这个路由 `/girls` 做 `POST` 请求，它会去调用控制器的 `create` 动作。这也是你先前按下 New Girl 的动作。恩，我讲你可能不太相信，让我带你看看，先跳到 http://localhost:3000/girls/new 页面，并鼠标右键 -> 检视源代码，你会看到表单中：
 
     <form accept-charset="UTF-8" action="/girls" class="new_girl" id="new_girl" method="post">
-
-    <form action="/purchases" class="new_purchase" id="new_purchase" method="post">
 
 嘿嘿！这里有两个要注意的属性，就是 `action` 与 `method` 属性。`action` 指出了这个表单要去的路由，而 `method` 告诉浏览器何种 HTTP 请求。
 
